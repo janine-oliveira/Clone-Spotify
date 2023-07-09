@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgba(0,0,0, 1);
+    background: url("../music.gif") center center/cover;
+    height: 100vh;
+    
+}
+
+img{
+    padding: 80px;
+    width: 80px;
+}
+
+.player {
+    padding: 200px 20px 20px ;
+    margin-bottom: 20px;
+}
+
+.buttons button{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    color: white;
+    border-color: white;
+    
+}
+#prev{
+    background-color: rgb(107, 152, 241);
+}
+#stop{
+    background-color: rgb(237, 70, 104);
+}
+#next{
+    background-color:#1DB954;
+}

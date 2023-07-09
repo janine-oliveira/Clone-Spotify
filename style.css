@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+.btn-primary{
+    background-color: #1DB954;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: all 300ms ease;
+}
+.btn-primary:hover{
+    background: #067d2f;
+    cursor: pointer;
+}
+
+
+.logo{
+    height: 40px;
+    width: auto;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgba(0,0,0, 0.6);
+    color: white;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+
+.navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+
+.navbar-container ul li{
+    padding: 0 20px;
+    transition: all 300ms ease;
+}
+
+.navbar-container ul li:hover{
+    color: #1DB954;
+    cursor: pointer;
+}
+
+#showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("./fundoo.jpg") center top/cover;
+    background-color: rgba(0,0,0, 0.4);
+    background-blend-mode: color;
+}
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showcase-container h2{
+    font-size: 5rem;
+}
+.showcase-container p{
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    padding: 80px 0;
+}
+
+.footer-content{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+.footer-menu{
+    margin: 0 25px;
+    list-style: none;
+}
+
+.footer-menu-item{
+    margin: 25px 0;
+    transition: all 300ms ease;
+}
+.footer-menu-item:hover{
+    cursor: pointer;
+    color: #1DB954;
+}
+.footer-menu p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;
+}
+
+.socials{
+    display: flex;
+}
+.socials i{
+    margin: 8px;
+    font-size: 1.5rem;
+    transition: all 300ms ease;
+}
+
+.socials i:hover{
+    cursor: pointer;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75rem;
+    padding-top: 50px;
+    
+}
+
+.footer-info-items{
+    display: flex;
+    list-style: none;
+}
+
+.footer-info-item{
+    margin: 0 10px;
+    transition: all 300ms ease;
+}
+.footer-info-item:hover{
+    color:#1DB954;
+    cursor: pointer;
+}
+.country{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 300ms ease;
+}
+
+.country:hover{
+    color:#1DB954;
+    cursor: pointer;
+}
+.country img{
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+/* Estilos padrão */
+
+/* Estilos para dispositivos com largura máxima de 768 pixels */
+@media (max-width: 768px) {
+    .navbar-container {
+      width: 80%;
+    }
+    .showcase-container {
+      font-size: 3rem;
+    }
+    .footer-content {
+      flex-wrap: wrap;
+    }
+    .footer-menu {
+      margin: 0;
+      text-align: center;
+    }
+    .footer-menu-item {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Estilos para dispositivos com largura máxima de 480 pixels */
+  @media (max-width: 480px) {
+    .navbar-container {
+      width: 100%;
+      padding: 10px;
+    }
+    .navbar-items {
+      display: none;
+    }
+    .navbar-item {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .showcase-container {
+      font-size: 2.5rem;
+    }
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-menu {
+      margin: 20px 0;
+    }
+    .footer-info {
+      flex-direction: column-reverse;
+    }
+    .country img {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
